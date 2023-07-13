@@ -15,10 +15,15 @@
         a.nav-link{
           text-align:center;
         }
+
+        .login-btn:hover {
+        background-color: darkgray;
+        color: white;
+    }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
         <div class="container-fluid">
             <img src="images/user.png" alt="Logo" width="70" height="70" class="rounded-circle d-inline-block align-text-top" style="margin-right: 10px;">
             <span style="font-size: 2rem;">LU print shop</span>
@@ -26,46 +31,19 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <?php
-                    // session_start();
-                    if (isset($_SESSION['l_username'])) {
-                    ?>
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">logged</a></li>
-                    </ul>
-                    <?php } else { ?>
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#"  style="text-align: center">Button 1</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"  style="text-align: center">Button 2</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"  style="text-align: center">Button 3</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"  style="text-align: center">Button 4</a></li>
-                    </ul>
-                <?php } ?>
-            </div> 
-
             
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <?php
                     // session_start();
                     if (isset($_SESSION['l_username'])) {
-                    ?>
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="images/user.png" alt="Profile" width="30" height="30" class="rounded-circle">
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">My Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                    </ul>
+                    ?>  
+                        <a class="nav-link btn btn-primary" href="logout.php" style="margin-right: 1rem;margin-left: 1rem">Logout</a>
                     <?php } else { ?>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-primary" href="login.php" style="margin-right: 1rem;margin-left: 1rem">Login</a>
-                        </li>
-                    </ul>
+                            <a class="nav-link" href="#"  style="text-align: center; margin-left:2rem;">Button 1</a>
+                            <a class="nav-link" href="#"  style="text-align: center; margin-left:2rem;">Button 2</a>
+                            <a class="nav-link" href="#"  style="text-align: center; margin-left:2rem;">Button 3</a>
+                            <a class="nav-link" href="#"  style="text-align: center; margin-left:2rem;">Button 4</a>
+                            <a class="login-btn nav-link btn" href="login.php" style="text-align: center; margin-right: 1rem; margin-left: 1rem; background-color: gray; padding-left: 1rem; padding-right: 1rem; padding-top: 0.5rem; padding-bottom: 0.5rem; font-size : 1rem; ">Login</a>
                 <?php } ?>
             </div>
         </div>

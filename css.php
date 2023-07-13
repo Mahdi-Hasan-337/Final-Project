@@ -1,6 +1,5 @@
 <?php
   header('Content-type: text/css; charset: UTF-8');
-  
 ?>
 label.logo{
         color: rgb(0, 0, 0);
