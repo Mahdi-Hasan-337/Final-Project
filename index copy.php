@@ -123,14 +123,6 @@
                                         <li><a class="dropdown-item" href="#" style="text-align:center;font-size: 1.2rem">Electric</a></li>
                                         <hr>
                                         <li><a class="dropdown-item" href="#" style="text-align:center;font-size: 1.2rem">Electronics</a></li>
-                                        <hr>
-                                        <li><a class="dropdown-item" href="#" style="text-align:center;font-size: 1.2rem">Ceramics</a></li>
-                                        <hr>
-                                        <li><a class="dropdown-item" href="#" style="text-align:center;font-size: 1.2rem">Library</a></li>
-                                        <hr>
-                                        <li><a class="dropdown-item" href="#" style="text-align:center;font-size: 1.2rem">Cloth</a></li>
-                                        <hr>
-                                        <li><a class="dropdown-item" href="#" style="text-align:center;font-size: 1.2rem">Furniture</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item align-items-center mt-2" style="text-align:center;">
@@ -165,23 +157,22 @@
                     <div class="carousel-item active c-item">
                         <img src="images/drone.jpg" class="c-img" alt="Carousel Image 1">
                         <div class="carousel-caption">
-                            <h3>Upto</h3>
-                            <p>30% off</p>
+                            <h3>maximum 30% off</h3>
+                            <p>Only in Online </p>
                         </div>
                     </div>
                     <div class="carousel-item c-item">
                         <img src="images/camera.jpg" class="c-img" alt="Carousel Image 2">
                         <div class="carousel-caption">
-                            <h3>Best Quality</h3>
-                            <p>Camera</p>
-                            <p>Make your dream easier</p>
+                            <h3>Slide 2 Title</h3>
+                            <p>Slide 2 Description</p>
                         </div>
                     </div>
                     <div class="carousel-item c-item">
                         <img src="images/gadget.jpg" class="c-img" alt="Carousel Image 3">
                         <div class="carousel-caption">
-                            <h3>Your Dream</h3>
-                            <p>Our Satisfaction</p>
+                            <h3>Slide 3 Title</h3>
+                            <p>Slide 3 Description</p>
                         </div>
                     </div>
                 </div>
@@ -197,7 +188,7 @@
                 </a>
             </div>
         </section>
-        
+
         <section class="card-section">
             <div class="row mt-4 mb-4">   
                 <div class="col-lg-3 col-md-6">
@@ -205,7 +196,7 @@
                         <div class="card card d-block m-auto" style="width: 18rem;">
                             <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title" style="text-align:center; color: black; font-size: 1.5rem;">Stationery</h5>
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Stationery</h5>
                                 <!-- <hr>
                                 <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
                                 <hr>
@@ -229,7 +220,7 @@
                         <div class="card card d-block m-auto" style="width: 18rem;">
                             <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title" style="text-align:center; color: black; font-size: 1.5rem;">Grocery</h5>
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Grocery</h5>
                                 <!-- <hr>
                                 <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
                                 <hr>
@@ -253,7 +244,7 @@
                         <div class="card card d-block m-auto" style="width: 18rem;">
                             <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title" style="text-align:center; color: black; font-size: 1.5rem;">Electric</h5>
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Electric</h5>
                                 <!-- <hr>
                                 <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
                                 <hr>
@@ -277,7 +268,7 @@
                         <div class="card card d-block m-auto" style="width: 18rem;">
                             <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title" style="text-align:center; color: black; font-size: 1.5rem;">Electronics</h5>
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Electronics</h5>
                                 <!-- <hr>
                                 <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
                                 <hr>
@@ -303,7 +294,7 @@
                         <div class="card card d-block m-auto" style="width: 18rem;">
                             <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title" style="text-align:center; color: black; font-size: 1.5rem;">Ceramic</h5>
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Stationery</h5>
                                 <!-- <hr>
                                 <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
                                 <hr>
@@ -327,7 +318,7 @@
                         <div class="card card d-block m-auto" style="width: 18rem;">
                             <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title" style="text-align:center; color: black; font-size: 1.5rem;">Library</h5>
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Grocery</h5>
                                 <!-- <hr>
                                 <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
                                 <hr>
@@ -351,7 +342,7 @@
                         <div class="card card d-block m-auto" style="width: 18rem;">
                             <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title" style="text-align:center; color: black; font-size: 1.5rem;">Cloth</h5>
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Electric</h5>
                                 <!-- <hr>
                                 <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
                                 <hr>
@@ -375,7 +366,105 @@
                         <div class="card card d-block m-auto" style="width: 18rem;">
                             <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title" style="text-align:center; color: black; font-size: 1.5rem;">Furniture</h5>
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Electronics</h5>
+                                <!-- <hr>
+                                <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
+                                <hr>
+                                <p class="card-text btn btn-danger d-block m-auto" style="text-align:center; padding : .7rem; font-weight: 600;"><i class="fa-solid fa-cart-shopping" style="align-item:center;"></i> Add to Cart</p> -->
+                            </div>
+                            <!-- <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row mt-4 mb-4">   
+                <div class="col-lg-3 col-md-6">
+                    <a href="electronics.php" style="text-decoration:none;">
+                        <div class="card card d-block m-auto" style="width: 18rem;">
+                            <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Stationery</h5>
+                                <!-- <hr>
+                                <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
+                                <hr>
+                                <p class="card-text btn btn-danger d-block m-auto" style="text-align:center; padding : .7rem; font-weight: 600;"><i class="fa-solid fa-cart-shopping" style="align-item:center;"></i> Add to Cart</p> -->
+                            </div>
+                            <!-- <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="electronics.php" style="text-decoration:none;">
+                        <div class="card card d-block m-auto" style="width: 18rem;">
+                            <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Grocery</h5>
+                                <!-- <hr>
+                                <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
+                                <hr>
+                                <p class="card-text btn btn-danger d-block m-auto" style="text-align:center; padding : .7rem; font-weight: 600;"><i class="fa-solid fa-cart-shopping" style="align-item:center;"></i> Add to Cart</p> -->
+                            </div>
+                            <!-- <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="electronics.php" style="text-decoration:none;">
+                        <div class="card card d-block m-auto" style="width: 18rem;">
+                            <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Electric</h5>
+                                <!-- <hr>
+                                <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
+                                <hr>
+                                <p class="card-text btn btn-danger d-block m-auto" style="text-align:center; padding : .7rem; font-weight: 600;"><i class="fa-solid fa-cart-shopping" style="align-item:center;"></i> Add to Cart</p> -->
+                            </div>
+                            <!-- <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="electronics.php" style="text-decoration:none;">
+                        <div class="card card d-block m-auto" style="width: 18rem;">
+                            <img class="card-img-top" src="images/camera.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align:center; color: black; font-size: 2rem;">Electronics</h5>
                                 <!-- <hr>
                                 <p class="card-text" style="text-align:center; color: black; font-size: 1.5rem;">Price : $20</p>
                                 <hr>
@@ -395,6 +484,31 @@
                 </div>
             </div>
         </section>
+
+                <!-- Register as Admin or user? -->
+                <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="display: flex; align-items: center; min-height: calc(100% - 1rem);">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-auto d-block mb-2">
+                        <h5 class="modal-title" id="loginModalLabel" style="text-align:center">Sign up as</h5>
+                        <a href="#" type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#adminlogin"  style="width:6rem; margin-left:1rem; margin-right:1rem;">ADMIN</a>
+                        <span style="mt-2">or</span>
+                        <a href="#" type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#userlogin"  style="width:6rem; margin-left:1rem; margin-right:1rem;">USER</a>
+                    </div>
+                    <div class="modal-footer"> 
+                        <p>Already have an account?
+                            <a href="#" type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#loginModal"  style="width:6rem; margin-left:1rem; margin-right:1rem;">
+                                sign in
+                            </a>
+                        </p>
+                        <button type="button" class="btn btn-secondary m-auto d-block" data-bs-dismiss="modal" style="width:6rem;" aria-label="Close">CANCEL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="footer">
             <footer class="footer bg-dark text-light" style="padding:.5rem;">
@@ -446,41 +560,14 @@
                         <a href="#" type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#userlogin"  style="width:6rem; margin-left:1rem; margin-right:1rem;">USER</a>
                     </div>
                     <div class="modal-footer"> 
-                        <p>Don't Have an Account?
-                            <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#signupModal"  style="width:6rem; margin-left:1rem; margin-right:1rem;">Sign Up</a>
-                        </p>
                         <button type="button" class="btn btn-secondary m-auto d-block" data-bs-dismiss="modal" style="width:6rem;" aria-label="Close">CANCEL</button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Sign Up Modal -->
-        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-            <div class="modal-dialog" style="display: flex; align-items: center; min-height: calc(100% - 1rem);">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body m-auto d-block mb-2">
-                        <h5 class="modal-title" id="loginModalLabel" style="text-align:center">Register as</h5>
-                        <a href="#" type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#adminreg"  style="width:6rem; margin-left:1rem; margin-right:1rem;">ADMIN</a>
-                        <span style="mt-2">or</span>
-                        <a href="#" type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#userreg"  style="width:6rem; margin-left:1rem; margin-right:1rem;">USER</a>
-                    </div>
-                    <div class="modal-footer"> 
-                        <p>Don't Have an Account?
-                            <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#loginModal"  style="width:6rem; margin-left:1rem; margin-right:1rem;">Login</a>
-                        </p>
-                        <button type="button" class="btn btn-secondary m-auto d-block" data-bs-dismiss="modal" style="width:6rem;" aria-label="Close">CANCEL</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
         <!-- Admin Login -->
-        <div class="modal fade" id="adminlogin" tabindex="-1" aria-labelledby="adminloginLabel" aria-hidden="true">
+        <div class="modal fade" id="adminlogin" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="display: flex; align-items: center; min-height: calc(100% - 1rem);">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -513,7 +600,7 @@
         </div>
 
         <!-- User Login -->
-        <div class="modal fade" id="userlogin" tabindex="-1" aria-labelledby="userloginLabel" aria-hidden="true">
+        <div class="modal fade" id="userlogin" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="display: flex; align-items: center; min-height: calc(100% - 1rem);">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -546,7 +633,7 @@
         </div>
 
         <!-- Admin Register -->
-        <div class="modal fade" id="adminreg" tabindex="-1" aria-labelledby="adminregLabel" aria-hidden="true">
+        <div class="modal fade" id="adminreg" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="display: flex; align-items: center; min-height: calc(100% - 1rem);">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -566,11 +653,6 @@
                             </div>
 
                             <div class="mb-3">
-                                Phone :                         
-                                <input type="text" class="form-control" name="ar_phone">
-                            </div>
-
-                            <div class="mb-3">
                                 Password :                         
                                 <input type="text" class="form-control" name="ar_pass">
                             </div>
@@ -578,6 +660,11 @@
                             <div class="mb-3">
                                 Confirm Password :                         
                                 <input type="text" class="form-control" name="ar_conpass">
+                            </div>
+
+                            <div class="mb-3">
+                                Phone :                         
+                                <input type="text" class="form-control" name="ar_phone">
                             </div>
                             
                             <button type="Register" class="btn btn-primary col-12">Register</button>
@@ -593,7 +680,7 @@
         </div>
 
         <!-- User register -->
-        <div class="modal fade" id="userreg" tabindex="-1" aria-labelledby="userregLabel" aria-hidden="true">
+        <div class="modal fade" id="userreg" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="display: flex; align-items: center; min-height: calc(100% - 1rem);">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -613,11 +700,6 @@
                             </div>
 
                             <div class="mb-3">
-                                Phone :                         
-                                <input type="text" class="form-control" name="ur_phone">
-                            </div>
-
-                            <div class="mb-3">
                                 Password :                         
                                 <input type="text" class="form-control" name="ur_pass">
                             </div>
@@ -625,6 +707,11 @@
                             <div class="mb-3">
                                 Confirm Password :                         
                                 <input type="text" class="form-control" name="ur_conpass">
+                            </div>
+
+                            <div class="mb-3">
+                                Phone :                         
+                                <input type="text" class="form-control" name="ur_phone">
                             </div>
                             
                             <button type="Register" class="btn btn-primary col-12">Register</button>
@@ -640,14 +727,14 @@
         </div>
 
         <!-- Are you sure to logout? -->
-        <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="display: flex; align-items: center; min-height: calc(100% - 1rem);">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body m-auto d-block mb-2">
-                        <h5 class="modal-title" id="logoutModalLabel" style="text-align:center">Are you sure to logout?</h5>
+                        <h5 class="modal-title" id="loginModalLabel" style="text-align:center">Are you sure to logout?</h5>
                     </div>
 
                     <div class="modal-footer"> 

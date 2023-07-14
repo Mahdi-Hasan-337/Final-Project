@@ -4,11 +4,11 @@
     include 'config.php';
 
     // to accept all values coming from register.php field
-    $ur_username = $_POST['ur_username'];
-    $ur_email = $_POST['ur_email'];
-    $ur_phone = $_POST['ur_phone'];
-    $ur_pass = $_POST['ur_pass'];
-    $ur_conpass = $_POST['ur_conpass'];
+    $ar_username = $_POST['ar_username'];
+    $ar_email = $_POST['ar_email'];
+    $ar_phone = $_POST['ar_phone'];
+    $ar_pass = $_POST['ar_pass'];
+    $ar_conpass = $_POST['ar_conpass'];
 
     // regex of all fields
     $username_pattern = "/[A-Za-z .]{3,20}/";
@@ -26,35 +26,35 @@
     }
 
     // to validate user name field
-    elseif(!preg_match($username_pattern, $ur_username))
+    elseif(!preg_match($username_pattern, $ar_username))
     {
         echo "<script>alert('Invalid Username')</script>";
         echo "<script>location.href='register.php'</script>";
     }
 
     // to validate email field
-    elseif(!preg_match($email_pattern, $ur_email))
+    elseif(!preg_match($email_pattern, $ar_email))
     {
         echo "<script>alert('Invalid Email')</script>";
         echo "<script>location.href='register.php'</script>";
     }
 
     // To validate phone field
-    elseif(!preg_match($phone_pattern, $ur_phone))
+    elseif(!preg_match($phone_pattern, $ar_phone))
     {
         echo "<script>alert('Invalid Phone Number')</script>";
         echo "<script>location.href='register.php'</script>";
     }
 
     // To check password field
-    elseif(!preg_match($pass_pattern, $ur_pass))
+    elseif(!preg_match($pass_pattern, $ar_pass))
     {
         echo "<script>alert('Invalid Password')</script>";
         echo "<script>location.href='register.php'</script>";
     }
 
     // to check confirm password field and password field are same or not
-    elseif($ur_pass!=$ur_conpass)
+    elseif($ar_pass!=$ar_conpass)
     {
         echo "<script>alert('Password not matched')</script>";
         echo "<script>location.href='register.php'</script>";
@@ -62,7 +62,7 @@
 
     else
     {
-        $insert_query = "INSERT INTO `register`(`db_username`, `db_email`, `db_phone`, `db_pass`) VALUES ('$ur_username','$ur_email','$ur_phone','$ur_pass')";
+        $insert_query = "INSERT INTO `register`(`db_username`, `db_email`, `db_phone`, `db_pass`) VALUES ('$ar_username','$ar_email','$ar_phone','$ar_pass')";
         if(!mysqli_query($conn, $insert_query))
         {
             die("Not Inserted...!!!");
