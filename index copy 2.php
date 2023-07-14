@@ -1,5 +1,24 @@
 <?php
     session_start();
+    if(isset($_SESSION['al_username'])) {
+        header("Location: index.php");
+        exit();
+    }
+
+    if(isset($_SESSION['ul_username'])) {
+        header("Location: index.php");
+        exit();
+    }
+
+    if(isset($_SESSION['ar_username'])) {
+        header("Location: index.php");
+        exit();
+    }
+
+    if(isset($_SESSION['ur_username'])) {
+        header("Location: index.php");
+        exit();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -162,10 +181,7 @@
                                 <li class="nav-item btn btn-secondary login-btn" style="text-align:center;">
                                     <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" style="border-radius: 10%; font-size: 1.2rem;">Login</a>
                                 </li>
-                                <li class="nav-item" style="text-align:center;">
-                                    <span style="color: transparent;">A</span>
-                                </li>
-                                <li class="nav-item btn btn-secondary login-btn" style="text-align:center;">
+                                <li class="nav-item btn btn-secondary login-btn" style="margin-left:1rem;text-align:center;">
                                     <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal" style="border-radius: 10%; font-size: 1.2rem;">Register</a>
                                 </li>
                             </ul>
@@ -361,9 +377,9 @@
                     </div>
                     <div class="modal-body m-auto d-block mb-2">
                         <h5 class="modal-title" id="loginModalLabel" style="text-align:center">Login as</h5>
-                        <a href="logadmin.php" type="button" class="btn btn-primary mt-2" style="width:6rem; margin-left:1rem; margin-right:1rem;">ADMIN</a>
+                        <a href="#" type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#adminlogin"  style="width:6rem; margin-left:1rem; margin-right:1rem;">ADMIN</a>
                         <span style="mt-2">or</span>
-                        <a href="loguser.php" type="button" class="btn btn-primary mt-2" style="width:6rem; margin-left:1rem; margin-right:1rem;">USER</a>
+                        <a href="#" type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#userlogin"  style="width:6rem; margin-left:1rem; margin-right:1rem;">USER</a>
                     </div>
                     <div class="modal-footer"> 
                         <p>Don't Have an Account?
@@ -384,14 +400,178 @@
                     </div>
                     <div class="modal-body m-auto d-block mb-2">
                         <h5 class="modal-title" id="loginModalLabel" style="text-align:center">Register as</h5>
-                        <a href="regadmin.php" type="button" class="btn btn-primary mt-2" style="width:6rem; margin-left:1rem; margin-right:1rem;">ADMIN</a>
+                        <a href="#" type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#adminreg"  style="width:6rem; margin-left:1rem; margin-right:1rem;">ADMIN</a>
                         <span style="mt-2">or</span>
-                        <a href="reguser.php" type="button" class="btn btn-primary mt-2" style="width:6rem; margin-left:1rem; margin-right:1rem;">USER</a>
+                        <a href="#" type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#userreg"  style="width:6rem; margin-left:1rem; margin-right:1rem;">USER</a>
                     </div>
                     <div class="modal-footer"> 
-                        <p>Already Have an Account?
-                            <a href="regdmin.php" type="button" data-bs-toggle="modal" style="width:6rem; margin-left:1rem; margin-right:1rem;">Login</a>
+                        <p>Don't Have an Account?
+                            <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#loginModal"  style="width:6rem; margin-left:1rem; margin-right:1rem;">Login</a>
                         </p>
+                        <button type="button" class="btn btn-secondary m-auto d-block" data-bs-dismiss="modal" style="width:6rem;" aria-label="Close">CANCEL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Admin Login -->
+        <div class="modal fade" id="adminlogin" tabindex="-1" aria-labelledby="adminloginLabel" aria-hidden="true">
+            <div class="modal-dialog" style="display: flex; align-items: center; min-height: calc(100% - 1rem);">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-auto d-block mb-2">
+                        <form action="loginActionadmin.php" method="post">
+                            <h4 style="text-align:center; margin-bottom:1rem">ADMIN LOGIN</h4>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" class="form-control" name="al_username" placeholder="Enter username">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                                <input type="password" class="form-control" name="al_pass" placeholder="Enter password" id="adminLoginPasswordInput">
+                                <div class="input-group-text">
+                                    <input type="checkbox" onclick="togglePasswordVisibility('adminLoginPasswordInput')">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary col-12" style="background: gray; border-radius: 2rem;">Login</button>
+                            New? <a href="loginAdmin" type="button" data-bs-toggle="modal" data-bs-target="#adminreg"  style="width:6rem; margin-left:1rem; margin-right:1rem;">Register here</a>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer"> 
+                        <button type="button" class="btn btn-secondary m-auto d-block" data-bs-dismiss="modal" style="width:6rem;" aria-label="Close">CANCEL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Login -->
+        <div class="modal fade" id="userlogin" tabindex="-1" aria-labelledby="userloginLabel" aria-hidden="true">
+            <div class="modal-dialog" style="display: flex; align-items: center; min-height: calc(100% - 1rem);">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-auto d-block mb-2">
+                        <form action="loginAction.php" method="post">
+                            <h4 style="text-align:center; margin-bottom:1rem">USER LOGIN</h4>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" class="form-control" name="ul_username" placeholder="Enter username">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                                <input type="password" class="form-control" name="ul_pass" placeholder="Enter password" id="userLoginPasswordInput">
+                                <div class="input-group-text">
+                                    <input type="checkbox" onclick="togglePasswordVisibility('userLoginPasswordInput')">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary col-12" style="background: gray; border-radius: 2rem;">Login</button>
+                            New? <a href="loginUser.php" type="button" data-bs-toggle="modal" data-bs-target="#userreg"  style="width:6rem; margin-left:1rem; margin-right:1rem;">Register here</a>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer"> 
+                        <button type="button" class="btn btn-secondary m-auto d-block" data-bs-dismiss="modal" style="width:6rem;" aria-label="Close">CANCEL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Admin Register -->
+        <div class="modal fade" id="adminreg" tabindex="-1" aria-labelledby="adminregLabel" aria-hidden="true">
+            <div class="modal-dialog" style="display: flex; align-items: center; min-height: calc(100% - 1rem);">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-auto d-block mb-2">
+                        <form action="registerActionadmin.php" method="post">
+                            <h4 style="text-align:center; margin-bottom:1rem">ADMIN REGISTER</h4>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" class="form-control" name="r_username" placeholder="Enter username">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                                <input type="text" class="form-control" name="r_email" placeholder="Enter email">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+                                <input type="text" class="form-control" name="r_phone" placeholder="Enter mobile">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                                <input type="password" class="form-control" name="r_pass" placeholder="Enter password" id="adminPasswordInput">
+                                <div class="input-group-text">
+                                    <input type="checkbox" onclick="togglePasswordVisibility('adminPasswordInput')">
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                                <input type="password" class="form-control" name="r_con_pass" placeholder="Re-enter password" id="adminConfirmPasswordInput">
+                                <div class="input-group-text">
+                                    <input type="checkbox" onclick="togglePasswordVisibility('adminConfirmPasswordInput')">
+                                </div>
+                            </div>
+                            <button type="Register" class="btn btn-primary col-12">Register</button>
+                            Already have an account ? <a href="loginAdmin.php">Login Here</a>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer"> 
+                        <button type="button" class="btn btn-secondary m-auto d-block" data-bs-dismiss="modal" style="width:6rem;" aria-label="Close">CANCEL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- User register -->
+        <div class="modal fade" id="userreg" tabindex="-1" aria-labelledby="userregLabel" aria-hidden="true">
+            <div class="modal-dialog" style="display: flex; align-items: center; min-height: calc(100% - 1rem);">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-auto d-block mb-2">
+                        <form action="registerAction.php" method="post">
+                            <h4 style="text-align:center; margin-bottom:1rem">USER REGISTER</h4>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" class="form-control" name="ur_username" placeholder="Enter username">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                                <input type="text" class="form-control" name="ur_email" placeholder="Enter email">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+                                <input type="text" class="form-control" name="ur_phone" placeholder="Enter mobile">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                                <input type="password" class="form-control" name="ur_pass" placeholder="Enter password" id="passwordInput">
+                                <div class="input-group-text">
+                                    <input type="checkbox" onclick="togglePasswordVisibility('passwordInput')">
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                                <input type="password" class="form-control" name="ur_conpass" placeholder="Re-enter password" id="confirmPasswordInput">
+                                <div class="input-group-text">
+                                    <input type="checkbox" onclick="togglePasswordVisibility('confirmPasswordInput')">
+                                </div>
+                            </div>
+                            <button type="Register" class="btn btn-primary col-12">Register</button>
+                            Already have an account? <a href="loginuser.php">Login Here</a>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer"> 
                         <button type="button" class="btn btn-secondary m-auto d-block" data-bs-dismiss="modal" style="width:6rem;" aria-label="Close">CANCEL</button>
                     </div>
                 </div>

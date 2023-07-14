@@ -5,7 +5,7 @@
   $al_username = $_POST['al_username'];
   $al_pass = $_POST['al_pass'];
 
-  $query = "SELECT * FROM `register` WHERE db_username='$al_username' AND db_pass='$al_pass'";
+  $query = "SELECT * FROM `a_register` WHERE db_username='$al_username' AND db_pass='$al_pass'";
   $result = mysqli_query($conn, $query);
 
   if (mysqli_num_rows($result)) {
@@ -14,6 +14,6 @@
     exit();
   } else {
     echo "<script>alert('Username and Password do not match')</script>";
-    echo "<script>location.href='login.php'</script>";
+    echo "<script>location.href='index.php'</script>";
   }
 ?>
