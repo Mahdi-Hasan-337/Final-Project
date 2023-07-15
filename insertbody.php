@@ -67,7 +67,7 @@
     <div class="container-fluid">
         <div class="row justify-content-center mt-5">
             <div class="col-lg-4 col-md-6 col-sm-12 box">
-                form action="insertAction.php" method ="post" enctype='multipart/form-data'>
+                <form action="insertAction.php" method ="post" enctype='multipart/form-data'>
                     <h5 style="text-align:center">ADD A NEW PRODUCT</h5>
                     <div class="mb-3">                       
                         <input type="text" class="form-control box" name="p_name" placeholder="Enter the product name" required>

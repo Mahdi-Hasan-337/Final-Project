@@ -19,6 +19,7 @@
   if(mysqli_query($conn,$insert_query))
   {
     echo "<script>alert('Inserted')</script>";
-    echo "<script>location.href='insert.php'</script>";
+    // echo "<script>location.href='index.php'</script>";
+    echo "<script>location.href='insertbody.php'</script>";
   }
 ?>

@@ -5,5 +5,5 @@
     $deleteQuery = "DELETE FROM `product` WHERE id = '$id'";
     mysqli_query($conn, $deleteQuery);
 
-    header("Location:index.php");
+    header("Location:insertbody.php");
 ?>
